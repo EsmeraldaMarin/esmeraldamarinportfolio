@@ -1,0 +1,23 @@
+// imports
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Mono&display=swap');
+$monospace: 'Roboto Mono', monospace;
+$sansserif: 'Poppins', sans-serif;
+
+
+//Colors
+
+$blue: #040330;
+$blue2: #0c0c41;
+$orange1: #ff8062;
+$orange2: #f1b170;
+$skyblue: #5bcef2;
+
+@keyframes updown{
+    0%{
+        transform: translateY(-8px);
+    }
+    100%{
+        transform: translateY(8px);
+    }
+}

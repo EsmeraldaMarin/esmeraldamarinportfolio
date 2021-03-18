@@ -1,0 +1,39 @@
+header {
+    background-color: $blue;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    nav {
+        position: absolute;
+        top: 20px;
+        left: 50px;
+        ul {
+            display: flex;
+            li {
+                width: 90px;
+                height: 40px;
+                margin: 0 10px;
+                line-height: 35px;
+                position: relative;
+                cursor: pointer;
+                a {
+                    color: #fff;
+                }
+                &:after {
+                    content: "";
+                    width: 0;
+                    height: 3px;
+                    display: block;
+                    transition: all 0.5s ease;
+                }
+                &:hover {
+                    &:after {
+                        width: 100%;
+                        transition: width 0.5s ease;
+                        background-color: $orange1;
+                    }
+                }
+            }
+        }
+    }
+}

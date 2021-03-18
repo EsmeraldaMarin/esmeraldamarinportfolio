@@ -1,0 +1,52 @@
+.portadaSection {
+    position: relative;
+    background-color: $blue;
+    height: 100vh;
+    font-family: $monospace;
+    color: #fff;
+
+    > img {
+        height: 100%;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 2;
+    }
+    .textArea {
+        position: absolute;
+        z-index: 2;
+        left: 40px;
+        top: 30%;
+        img {
+            width: 150px;
+            clip-path: circle(50% at 50% 50%);
+            display: block;
+            height: 150px;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+        h1 {
+            margin: 0 0 10px 0;
+            font-size: 4em;
+        }
+        .helloSpan {
+            font-size: 3em;
+        }
+        .descSpan {
+            color: $skyblue;
+            font-size: 1.3em;
+        }
+    }
+    .scrollDown {
+        position: absolute;
+        color: #fff;
+        bottom: 30px;
+        left: 45%;
+        animation: updown 2s alternate-reverse ease-in-out infinite;
+        z-index: 2;
+        cursor: pointer;
+        span {
+            font-family: $sansserif;
+        }
+    }
+}
