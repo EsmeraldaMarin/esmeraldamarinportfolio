@@ -8,6 +8,30 @@
   }
 }
 
+@keyframes type {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes type2 {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  to {
+    opacity: 0;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -37,47 +61,21 @@ a {
   z-index: 1;
 }
 
-.textArea p {
-  white-space: nowrap;
-  overflow: hidden;
-  animation: type 2s steps(20, end) forwards;
-  width: 0;
+.loader {
+  position: fixed;
+  background-color: #040330;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 1s ease;
 }
 
-.textArea p:nth-child(2) {
-  animation: type2 2s 2s steps(30, end) forwards;
-}
-
-.textArea p:nth-child(3) {
-  animation: type2 3.5s 4s steps(40, end) forwards;
-}
-
-.textArea span {
-  animation: blink 1s infinite;
-}
-
-@keyframes type {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-
-@keyframes type2 {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 100%;
-  }
-}
-
-@keyframes blink {
-  to {
-    opacity: 0;
-  }
+.loader .loadIcon {
+  width: 100px;
+  height: 100px;
 }
 
 header {
@@ -102,6 +100,10 @@ header .socialMedia {
 header .socialMedia i {
   color: #fff;
   font-size: 16px;
+}
+
+header .socialMedia i:hover {
+  color: #5bcef2;
 }
 
 header nav ul {
@@ -186,6 +188,25 @@ header nav ul li:hover:after {
 
 .portadaSection .infoArea .textArea .descSpan {
   font-size: 1.3em;
+}
+
+.portadaSection .infoArea .textArea p {
+  white-space: nowrap;
+  overflow: hidden;
+  animation: type 2s steps(20, end) forwards;
+  width: 0;
+}
+
+.portadaSection .infoArea .textArea p:nth-child(2) {
+  animation: type2 2s 2s steps(30, end) forwards;
+}
+
+.portadaSection .infoArea .textArea p:nth-child(3) {
+  animation: type2 3.5s 4s steps(40, end) forwards;
+}
+
+.portadaSection .infoArea .textArea span {
+  animation: blink 1s infinite;
 }
 
 .portadaSection .scrollDown {

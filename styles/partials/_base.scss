@@ -25,45 +25,18 @@ a {
     z-index: 1;
 }
 
-.textArea {
-    p {
-        white-space: nowrap;
-        overflow: hidden;
-        animation: type 2s steps(20, end) forwards;
-        width: 0;
-    }
-    p:nth-child(2) {
-        animation: type2 2s 2s steps(30, end) forwards;
-    }
-    p:nth-child(3) {
-        animation: type2 3.5s 4s steps(40, end) forwards;
-    }
-
-    span {
-        animation: blink 1s infinite;
-    }
-}
-
-@keyframes type {
-    from {
-        width: 0;
-    }
-    to {
-        width: 100%;
-    }
-}
-
-@keyframes type2 {
-    0% {
-        width: 0;
-    }
-    100% {
-        width: 100%;
-    }
-}
-
-@keyframes blink {
-    to {
-        opacity: 0;
+.loader {
+    position: fixed;
+    background-color: $blue;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s ease;
+    .loadIcon {
+        width: 100px;
+        height: 100px;
     }
 }
