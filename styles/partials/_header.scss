@@ -1,12 +1,24 @@
 header {
-    background-color: $blue;
     position: sticky;
     top: 0;
     z-index: 3;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+    background-color: #040330;
+    background-image: $urlFondo;
+    .socialMedia{
+        height: 40px;
+        width: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        i{
+            color: #fff;
+            font-size: 16px;
+        }
+    }
     nav {
-        position: absolute;
-        top: 20px;
-        left: 50px;
         ul {
             display: flex;
             li {

@@ -1,10 +1,10 @@
 .portadaSection {
     position: relative;
-    background-color: $blue;
-    height: 100vh;
+    background-color: #040330;
+    background-image: $urlFondo;
+    height: 80vh;
     font-family: $monospace;
     color: #fff;
-
     > img {
         height: 100%;
         position: absolute;
@@ -12,35 +12,40 @@
         top: 0;
         z-index: 2;
     }
-    .textArea {
+    .infoArea {
+        width: 100%;
         position: absolute;
+        display: grid;
+        grid-template-columns: 600px 1fr;
+        justify-items: center;
+        align-items: center;
         z-index: 2;
-        left: 40px;
-        top: 30%;
+        top: 25%;
         img {
-            width: 150px;
+            width: 300px;
             clip-path: circle(50% at 50% 50%);
             display: block;
-            height: 150px;
             object-fit: cover;
             margin-bottom: 10px;
         }
-        h1 {
-            margin: 0 0 10px 0;
-            font-size: 4em;
-        }
-        .helloSpan {
-            font-size: 3em;
-        }
-        .descSpan {
-            color: $skyblue;
-            font-size: 1.3em;
+        .textArea {
+            justify-self: flex-start;
+            .myName {
+                margin: 0 0 10px 0;
+                font-size: 4em;
+            }
+            .helloSpan {
+                font-size: 3em;
+            }
+            .descSpan {
+                font-size: 1.3em;
+            }
         }
     }
     .scrollDown {
         position: absolute;
-        color: #fff;
-        bottom: 30px;
+        color: $blue;
+        bottom: -50px;
         left: 45%;
         animation: updown 2s alternate-reverse ease-in-out infinite;
         z-index: 2;

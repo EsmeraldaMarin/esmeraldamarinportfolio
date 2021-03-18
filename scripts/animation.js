@@ -12,7 +12,7 @@ var light = {
     y: 200
 }
 
-var colors = ["#ff8062", "#f1b170", "#5bcef2"];
+var colors = ["#ff80629c", "#f1b1709c", "#5bcef29c"];
 
 function drawLight() {
     ctx.beginPath();
@@ -28,7 +28,7 @@ function drawLight() {
 }
 
 function Box() {
-    this.half_size = Math.floor((Math.random() * 10) + 1);
+    this.half_size = Math.floor((Math.random() * 20) + 1);
     this.x = Math.floor((Math.random() * c.width) + 1);
     this.y = Math.floor((Math.random() * c.height) + 1);
     this.r = Math.random() * Math.PI;
@@ -101,7 +101,6 @@ function draw() {
         boxes[i].rotate();
     };
     for (var i = 0; i < boxes.length; i++) {
-        collisionDetection(i)
         boxes[i].draw();
     };
     requestAnimationFrame(draw);
@@ -110,24 +109,9 @@ function draw() {
 resize();
 draw();
 
-while (boxes.length < 20) {
+while (boxes.length < 60) {
     boxes.push(new Box());
 }
 
 window.onresize = resize;
-
-function collisionDetection(b) {
-    for (var i = boxes.length - 1; i >= 0; i--) {
-        if (i != b) {
-            var dx = (boxes[b].x + boxes[b].half_size) - (boxes[i].x + boxes[i].half_size);
-            var dy = (boxes[b].y + boxes[b].half_size) - (boxes[i].y + boxes[i].half_size);
-            var d = Math.sqrt(dx * dx + dy * dy);
-            if (d < boxes[b].half_size + boxes[i].half_size) {
-                boxes[b].half_size = boxes[b].half_size > 1 ? boxes[b].half_size -= 1 : 1;
-                boxes[i].half_size = boxes[i].half_size > 1 ? boxes[i].half_size -= 1 : 1;
-            }
-        }
-    }
-}
-
 
