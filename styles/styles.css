@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Mono&display=swap");
+@keyframes updown {
+  0% {
+    transform: translateY(-8px);
+  }
+  100% {
+    transform: translateY(8px);
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border-width: 0;
+  outline: none;
+  font-family: "Roboto Mono", monospace;
+}
+
+body {
+  background-color: #0c0c41;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* html {
+    height: 100%;
+}
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    cursor: none;
+}*/
+#canvas {
+  position: absolute;
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+header {
+  background-color: #040330;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+}
+
+header nav {
+  position: absolute;
+  top: 20px;
+  left: 50px;
+}
+
+header nav ul {
+  display: flex;
+}
+
+header nav ul li {
+  width: 90px;
+  height: 40px;
+  margin: 0 10px;
+  line-height: 35px;
+  position: relative;
+  cursor: pointer;
+}
+
+header nav ul li a {
+  color: #fff;
+}
+
+header nav ul li:after {
+  content: "";
+  width: 0;
+  height: 3px;
+  display: block;
+  transition: all 0.5s ease;
+}
+
+header nav ul li:hover:after {
+  width: 100%;
+  transition: width 0.5s ease;
+  background-color: #ff8062;
+}
+
+.portadaSection {
+  position: relative;
+  background-color: #040330;
+  height: 100vh;
+  font-family: "Roboto Mono", monospace;
+  color: #fff;
+}
+
+.portadaSection > img {
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 2;
+}
+
+.portadaSection .textArea {
+  position: absolute;
+  z-index: 2;
+  left: 40px;
+  top: 30%;
+}
+
+.portadaSection .textArea img {
+  width: 150px;
+  clip-path: circle(50% at 50% 50%);
+  display: block;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.portadaSection .textArea h1 {
+  margin: 0 0 10px 0;
+  font-size: 4em;
+}
+
+.portadaSection .textArea .helloSpan {
+  font-size: 3em;
+}
+
+.portadaSection .textArea .descSpan {
+  color: #5bcef2;
+  font-size: 1.3em;
+}
+
+.portadaSection .scrollDown {
+  position: absolute;
+  color: #fff;
+  bottom: 30px;
+  left: 45%;
+  animation: updown 2s alternate-reverse ease-in-out infinite;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.portadaSection .scrollDown span {
+  font-family: "Poppins", sans-serif;
+}
+/*# sourceMappingURL=styles.css.map */
