@@ -9,6 +9,8 @@
 body {
     background-color: #ffffff;
     background-image: $urlFondoBody;
+    animation: 10s linear 0s normal none infinite animate;
+
 }
 li {
     list-style: none;

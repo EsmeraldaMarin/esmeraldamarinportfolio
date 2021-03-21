@@ -14,21 +14,8 @@ var light = {
 
 var colors = ["#ff80629c", "#f1b1709c", "#5bcef29c"];
 
-function drawLight() {
-    ctx.beginPath();
-    ctx.arc(light.x, light.y, 1000, 0, 2 * Math.PI);
-    var gradient = ctx.createRadialGradient(light.x, light.y, 0, light.x, light.y, 1000);
-    gradient.addColorStop(0, "transparent");
-    gradient.addColorStop(1, "transparent");
-    ctx.fillStyle = gradient;
-    ctx.fill();
-
-    ctx.beginPath();
-    ctx.arc(light.x, light.y, 20, 0, 2 * Math.PI);
-}
-
 function Box() {
-    this.half_size = Math.floor((Math.random() * 20) + 1);
+    this.half_size = Math.floor((Math.random() * 30) + 1);
     this.x = Math.floor((Math.random() * c.width) + 1);
     this.y = Math.floor((Math.random() * c.height) + 1);
     this.r = Math.random() * Math.PI;
@@ -95,7 +82,6 @@ var boxes = [];
 
 function draw() {
     ctx.clearRect(0, 0, c.width, c.height);
-    drawLight();
 
     for (var i = 0; i < boxes.length; i++) {
         boxes[i].rotate();

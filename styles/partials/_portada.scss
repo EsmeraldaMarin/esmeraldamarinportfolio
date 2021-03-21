@@ -5,6 +5,11 @@
     height: 80vh;
     font-family: $monospace;
     color: #fff;
+    -webkit-animation: 10s linear 0s normal none infinite animate;
+    -moz-animation: 10s linear 0s normal none infinite animate;
+    -ms-animation: 10s linear 0s normal none infinite animate;
+    -o-animation: 10s linear 0s normal none infinite animate;
+    animation: 10s linear 0s normal none infinite animate;
     > img {
         height: 100%;
         position: absolute;
