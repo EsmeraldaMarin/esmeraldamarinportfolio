@@ -95,7 +95,7 @@
         position: absolute;
         color: $blue;
         bottom: -50px;
-        left: 45%;
+        left: calc(50% - 58px);
         animation: updown 2s alternate-reverse ease-in-out infinite;
         z-index: 2;
         cursor: pointer;
