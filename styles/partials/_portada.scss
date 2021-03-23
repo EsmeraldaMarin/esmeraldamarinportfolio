@@ -10,6 +10,9 @@
     -ms-animation: 10s linear 0s normal none infinite animate;
     -o-animation: 10s linear 0s normal none infinite animate;
     animation: 10s linear 0s normal none infinite animate;
+    @media (min-width: $bp-1) {
+    }
+
     > img {
         height: 100%;
         position: absolute;
@@ -19,31 +22,57 @@
     }
     .infoArea {
         width: 100%;
+        height: 100%;
         position: absolute;
-        display: grid;
-        grid-template-columns: 600px 1fr;
-        justify-items: center;
-        align-items: center;
+        display: flex;
+        flex-direction: column;
         z-index: 2;
-        top: 25%;
+        justify-content: center;
+        // top: 30px;
+        @media (min-width: $bp-1) {
+            height: auto;
+            display: grid;
+            grid-template-columns: 600px 1fr;
+            top: 25%;
+            justify-items: center;
+            align-items: center;
+        }
         img {
-            width: 300px;
+            width: 200px;
+            margin-bottom: 40px;
             clip-path: circle(50% at 50% 50%);
             display: block;
             object-fit: cover;
-            margin-bottom: 10px;
+            align-self: center;
+            @media (min-width: $bp-1) {
+                width: 300px;
+                margin-bottom: 10px;
+            }
         }
         .textArea {
             justify-self: flex-start;
+            padding-left: 20px;
+            @media (min-width: $bp-1) {
+                padding: 0;
+            }
             .myName {
-                margin: 0 0 10px 0;
-                font-size: 4em;
+                margin: 10px 0;
+                font-size: 1.6em;
+                @media (min-width: $bp-1) {
+                    font-size: 4em;
+                }
             }
             .helloSpan {
-                font-size: 3em;
+                font-size: 1.3em;
+                @media (min-width: $bp-1) {
+                    font-size: 3em;
+                }
             }
             .descSpan {
-                font-size: 1.3em;
+                font-size: 1.1em;
+                @media (min-width: $bp-1) {
+                    font-size: 1.3em;
+                }
             }
             p {
                 white-space: nowrap;
