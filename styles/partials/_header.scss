@@ -57,6 +57,7 @@ header {
         width: 80px;
         align-items: center;
         justify-content: space-between;
+        cursor: pointer;
         @media (min-width: $bp-1) {
             width: 150px;
             justify-content: space-evenly;

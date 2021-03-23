@@ -4,12 +4,16 @@
     border-width: 0;
     outline: none;
     font-family: $monospace;
+    &::selection{
+        background-color: $orange1;
+    }
 }
 
 body {
-    background-color: #ffffff;
+    background-color: #f8f7f7;
     background-image: $urlFondoBody;
     animation: 10s linear 0s normal none infinite animate;
+    overflow: hidden;
 
 }
 li {
@@ -17,6 +21,10 @@ li {
 }
 a {
     text-decoration: none;
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 #canvas {
@@ -28,7 +36,9 @@ a {
 }
 
 .loader {
-    position: fixed;
+    position: absolute;
+    top: 0;
+    left: 0;
     background-color: $blue;
     width: 100vw;
     height: 100vh;
