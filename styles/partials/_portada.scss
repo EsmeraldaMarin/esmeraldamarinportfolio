@@ -2,7 +2,7 @@
     position: relative;
     background-color: #040330;
     background-image: $urlFondo;
-    height: 80vh;
+    height: calc(100vh - 40px);
     font-family: $monospace;
     color: #fff;
     -webkit-animation: 10s linear 0s normal none infinite animate;
@@ -33,7 +33,7 @@
             height: auto;
             display: grid;
             grid-template-columns: 600px 1fr;
-            top: 25%;
+            top: 15%;
             justify-items: center;
             align-items: center;
         }
@@ -45,7 +45,7 @@
             object-fit: cover;
             align-self: center;
             @media (min-width: $bp-1) {
-                width: 300px;
+                width: 500px;
                 margin-bottom: 10px;
             }
         }
@@ -89,12 +89,24 @@
             span {
                 animation: blink 1s infinite;
             }
+            .aboutMe{
+                width: 800px;
+                margin-top: 50px;
+                font-family: $sansserif;
+                white-space: inherit;
+                overflow: initial;
+                opacity: 0;
+                color: $orange1;
+                text-shadow: 0 0 5px #fff;
+                animation: appear 0.5s 6s forwards;
+
+            }
         }
     }
     .scrollDown {
         position: absolute;
-        color: $blue;
-        bottom: -50px;
+        color: #fff;
+        bottom: 100px;
         left: calc(50% - 58px);
         animation: updown 2s alternate-reverse ease-in-out infinite;
         z-index: 2;

@@ -15,11 +15,9 @@ $orange1: #ff8062;
 $orange2: #f1b170;
 $skyblue: #5bcef2;
 
-
 /*Breakpoints*/
 $bp-1: 768px;
 $bp-2: 1024px;
-
 
 //keyframes
 
@@ -31,7 +29,6 @@ $bp-2: 1024px;
         transform: translateY(8px);
     }
 }
-
 
 @keyframes type {
     from {
@@ -56,7 +53,6 @@ $bp-2: 1024px;
         opacity: 0;
     }
 }
-
 
 @-webkit-keyframes animate {
     from {
@@ -103,6 +99,14 @@ $bp-2: 1024px;
     }
 }
 
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
 
 //urls backgrounds
 

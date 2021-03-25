@@ -12,7 +12,7 @@ burguerBtn.addEventListener('click', () => {
     burguerBtn.classList.toggle('menuActive')
 })
 
-function Appear() {
+/* function Appear() {
     let ctn = document.querySelector('#aboutMeSection');
     let ctnPosition = ctn.getBoundingClientRect().top;
     let screenPosition = window.innerHeight - 50;
@@ -21,7 +21,7 @@ function Appear() {
     }
 }
 
-window.addEventListener('scroll', Appear);
+window.addEventListener('scroll', Appear); */
 
 let scrollDownBtn = document.querySelector('.scrollDown');
 scrollDownBtn.addEventListener('click', () => {
