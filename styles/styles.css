@@ -304,7 +304,7 @@ header nav ul li:active {
 }
 
 .portadaSection .infoArea img {
-  width: 300px;
+  width: 85%;
   clip-path: circle(50% at 50% 50%);
   display: block;
   object-fit: cover;
