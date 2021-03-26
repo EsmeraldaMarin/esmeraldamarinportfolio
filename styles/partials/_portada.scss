@@ -47,7 +47,7 @@
             align-self: center;
             position: absolute;
             right: -60px;
-            top: 10px;
+            top: 25px;
             @media (min-width: $bp-1) {
                 width: 500px;
                 margin-bottom: 10px;
@@ -122,7 +122,7 @@
         justify-content: space-between;
         cursor: pointer;
         position: absolute;
-        top: 110px;
+        top: 125px;
         left: 20px;
         @media (min-width: $bp-1) {
             width: 150px;
@@ -146,6 +146,10 @@
         cursor: pointer;
         span {
             font-family: $sansserif;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
         }
     }
 }

@@ -311,7 +311,7 @@ header nav ul li:active {
   align-self: center;
   position: absolute;
   right: -60px;
-  top: 10px;
+  top: 25px;
 }
 
 @media (min-width: 768px) {
@@ -407,7 +407,7 @@ header nav ul li:active {
   justify-content: space-between;
   cursor: pointer;
   position: absolute;
-  top: 110px;
+  top: 125px;
   left: 20px;
 }
 
@@ -439,6 +439,7 @@ header nav ul li:active {
 
 .portadaSection .scrollDown span {
   font-family: "Poppins", sans-serif;
+  user-select: none;
 }
 
 .aboutMeSection {
