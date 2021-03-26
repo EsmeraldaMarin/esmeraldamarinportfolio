@@ -10,10 +10,9 @@
 }
 
 body {
-    background-color: #f8f7f7;
-    background-image: $urlFondoBody;
+    background-color: $blue;
+    background-image: $urlFondo;
     animation: 10s linear 0s normal none infinite animate;
-    overflow: hidden;
 
 }
 li {

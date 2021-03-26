@@ -1,15 +1,18 @@
 header {
     position: sticky;
-    height: 40px;
     top: 0;
-    z-index: 3;
+    height: 40px;
     display: flex;
     align-items: center;
     padding: 10px 30px;
-    background-color: #040330;
-    background-image: $urlFondo;
     justify-content: space-between;
-
+    z-index: 3;
+    h1{
+        font-family: $sansserif;
+        font-size: 20px;
+        font-weight: normal;
+        color: #fff;
+    }
     .burguerMenu {
         width: 25px;
         height: 20px;
@@ -50,33 +53,14 @@ header {
             transition: width 0.5s ease;
         }
     }
-    .socialMedia {
-        display: flex;
-        flex-direction: row;
-        height: 40px;
-        width: 80px;
-        align-items: center;
-        justify-content: space-between;
-        cursor: pointer;
-        @media (min-width: $bp-1) {
-            width: 150px;
-            justify-content: space-evenly;
-        }
-        i {
-            color: #fff;
-            font-size: 16px;
-            &:hover {
-                color: $skyblue;
-            }
-        }
-    }
+    
     nav {
         height: calc(100vh - 40px);
         width: 0;
         overflow: hidden;
         position: absolute;
         top: 60px;
-        left: 0;
+        right: 0;
         background-color: #fff;
         transition: width 0.5s ease;
         @media (min-width: $bp-1) {
