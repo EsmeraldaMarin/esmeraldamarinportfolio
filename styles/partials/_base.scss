@@ -4,6 +4,7 @@
     border-width: 0;
     outline: none;
     font-family: $monospace;
+    box-sizing: border-box;
     &::selection{
         background-color: $orange1;
     }

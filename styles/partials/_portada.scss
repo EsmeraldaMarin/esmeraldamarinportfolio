@@ -1,15 +1,8 @@
 .portadaSection {
     position: relative;
-    background-color: #040330;
-    background-image: $urlFondo;
     height: calc(100vh - 40px);
     font-family: $monospace;
     color: #fff;
-    -webkit-animation: 10s linear 0s normal none infinite animate;
-    -moz-animation: 10s linear 0s normal none infinite animate;
-    -ms-animation: 10s linear 0s normal none infinite animate;
-    -o-animation: 10s linear 0s normal none infinite animate;
-    animation: 10s linear 0s normal none infinite animate;
     @media (min-width: $bp-1) {
     }
 
