@@ -1,6 +1,6 @@
 .portadaSection {
     position: relative;
-    height: calc(100vh - 40px);
+    height: calc(100vh - 50px);
     font-family: $monospace;
     color: #fff;
     @media (min-width: $bp-1) {
@@ -132,7 +132,7 @@
     .scrollDown {
         position: absolute;
         color: #fff;
-        bottom: 100px;
+        bottom: 120px;
         left: calc(50% - 58px);
         animation: updown 2s alternate-reverse ease-in-out infinite;
         z-index: 2;

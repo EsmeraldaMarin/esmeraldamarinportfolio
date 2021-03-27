@@ -112,7 +112,6 @@ html {
 header {
   position: sticky;
   top: 0;
-  height: 40px;
   display: flex;
   align-items: center;
   padding: 10px 30px;
@@ -186,7 +185,7 @@ header nav {
   width: 0;
   overflow: hidden;
   position: absolute;
-  top: 60px;
+  top: 50px;
   right: 0;
   background-color: #fff;
   transition: width 0.5s ease;
@@ -266,7 +265,7 @@ header nav ul li:active {
 
 .portadaSection {
   position: relative;
-  height: calc(100vh - 40px);
+  height: calc(100vh - 50px);
   font-family: "Roboto Mono", monospace;
   color: #fff;
 }
@@ -428,7 +427,7 @@ header nav ul li:active {
 .portadaSection .scrollDown {
   position: absolute;
   color: #fff;
-  bottom: 100px;
+  bottom: 120px;
   left: calc(50% - 58px);
   animation: updown 2s alternate-reverse ease-in-out infinite;
   z-index: 2;
