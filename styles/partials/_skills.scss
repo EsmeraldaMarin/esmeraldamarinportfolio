@@ -68,11 +68,11 @@
         }
         .skillsUl{
             padding: 10px 0;
-            display: flex;
             flex-direction: column;
             justify-content: space-between;
-            &.backSkills, &.designSkills, &.langSkills{
-                display: none;
+            display: none;
+            &.ulSelected{
+                display: flex;
             }
             li{
                 p{
@@ -95,6 +95,12 @@
                         background-color: $orange2;
                     }
                 } 
+            }
+            &.designSkills, &.langSkills{
+                justify-content: flex-start;
+                li{
+                    margin-bottom: 36px;
+                }
             }
         }
     }
@@ -150,20 +156,4 @@
             width: 15%;
         }
     }
-}
-
-.sq-o1 {
-    width: 120px;
-    height: 120px;
-    background-color: $orange1;
-}
-.sq-s1 {
-    width: 100px;
-    height: 100px;
-    background-color: $skyblue;
-}
-.sq-o2 {
-    width: 50px;
-    height: 50px;
-    background-color: $orange2;
 }

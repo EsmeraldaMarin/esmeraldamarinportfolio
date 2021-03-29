@@ -109,6 +109,36 @@ html {
   height: 100px;
 }
 
+.sq-o1 {
+  width: 120px;
+  height: 120px;
+  background-color: #ff8062;
+}
+
+.sq-s1 {
+  width: 100px;
+  height: 100px;
+  background-color: #5bcef2;
+}
+
+.sq-o2 {
+  width: 50px;
+  height: 50px;
+  background-color: #f1b170;
+}
+
+.sq-b1 {
+  width: 70px;
+  height: 70px;
+  background-color: #040330;
+}
+
+.sq-w1 {
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+}
+
 header {
   position: sticky;
   top: 0;
@@ -524,13 +554,13 @@ header nav ul li:active {
 
 .skillsSection .skillsTable .skillsUl {
   padding: 10px 0;
-  display: flex;
   flex-direction: column;
   justify-content: space-between;
+  display: none;
 }
 
-.skillsSection .skillsTable .skillsUl.backSkills, .skillsSection .skillsTable .skillsUl.designSkills, .skillsSection .skillsTable .skillsUl.langSkills {
-  display: none;
+.skillsSection .skillsTable .skillsUl.ulSelected {
+  display: flex;
 }
 
 .skillsSection .skillsTable .skillsUl li p {
@@ -549,6 +579,14 @@ header nav ul li:active {
 
 .skillsSection .skillsTable .skillsUl li:nth-child(3) .rangeColor, .skillsSection .skillsTable .skillsUl li:nth-child(6) .rangeColor {
   background-color: #f1b170;
+}
+
+.skillsSection .skillsTable .skillsUl.designSkills, .skillsSection .skillsTable .skillsUl.langSkills {
+  justify-content: flex-start;
+}
+
+.skillsSection .skillsTable .skillsUl.designSkills li, .skillsSection .skillsTable .skillsUl.langSkills li {
+  margin-bottom: 36px;
 }
 
 .skillsSection > span {
@@ -615,21 +653,51 @@ header nav ul li:active {
   width: 15%;
 }
 
-.sq-o1 {
-  width: 120px;
-  height: 120px;
-  background-color: #ff8062;
+.proyectsSection .title {
+  margin: 0 auto;
+  position: relative;
+  width: 200px;
+  height: 170px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.sq-s1 {
-  width: 100px;
-  height: 100px;
+.proyectsSection .title h2 {
+  color: #040330;
+  font-weight: normal;
+  letter-spacing: 5px;
+  margin-bottom: 20px;
+}
+
+.proyectsSection .title > div {
+  position: absolute;
+}
+
+.proyectsSection .title > div.sq-w1 {
+  top: 20px;
+  left: 0;
+  z-index: -3;
+}
+
+.proyectsSection .title > div.sq-o1 {
+  top: 0px;
+  right: 0;
+  z-index: -1;
+}
+
+.proyectsSection .title > div.sq-b1 {
+  bottom: 0;
+  left: 30px;
+  z-index: -2;
+}
+
+.proyectsSection .clipDiv {
+  clip-path: polygon(0 7%, 100% 0, 100% 93%, 0% 100%);
+  padding: 50px;
   background-color: #5bcef2;
-}
-
-.sq-o2 {
-  width: 50px;
-  height: 50px;
-  background-color: #f1b170;
+  margin-top: -100px;
+  position: relative;
+  z-index: -10;
 }
 /*# sourceMappingURL=styles.css.map */

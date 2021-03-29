@@ -31,3 +31,30 @@ scrollDownBtn.addEventListener('click', () => {
         behavior: 'smooth'
     });
 })
+
+let skillsSections = document.querySelectorAll('#skillsSections li');
+let skillsUlInfo = document.querySelectorAll('.skillsUl');
+skillsSections.forEach(skill => {
+    skill.addEventListener('click', (e) => {
+        skillsSections.forEach(sk => {
+            sk.classList.remove('skSelected');
+        })
+        skillsUlInfo.forEach(skUl => {
+            skUl.classList.remove('ulSelected');
+        })
+        skill.classList.add('skSelected')
+        if (skill.classList.contains('fSk')) {
+            let frontSkills = document.querySelector('.frontSkills');
+            frontSkills.classList.add('ulSelected');
+        } else if (skill.classList.contains('bSk')) {
+            let backSkills = document.querySelector('.backSkills');
+            backSkills.classList.add('ulSelected');
+        } else if (skill.classList.contains('dSk')) {
+            let designSkills = document.querySelector('.designSkills');
+            designSkills.classList.add('ulSelected');
+        } else if (skill.classList.contains('lSk')) {
+            let langSkills = document.querySelector('.langSkills');
+            langSkills.classList.add('ulSelected');
+        }
+    })
+})
