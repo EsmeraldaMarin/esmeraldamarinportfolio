@@ -2,42 +2,100 @@
     .title {
         margin: 0 auto;
         position: relative;
-        width: 200px;
-        height: 170px;
+        width: 240px;
+        height: 200px;
         display: flex;
         justify-content: center;
         align-items: center;
         h2 {
             color: $blue;
-            font-weight: normal;
+            font-weight: bold;
             letter-spacing: 5px;
-            margin-bottom: 20px;
+            margin-bottom: 30px;
+            position: relative;
+            z-index: 5;
         }
         > div {
             position: absolute;
             &.sq-w1 {
-                top: 20px;
+                top: 40px;
                 left: 0;
-                z-index: -3;
+                z-index: 2;
             }
             &.sq-o1 {
                 top: 0px;
                 right: 0;
-                z-index: -1;
+                z-index: 4;
+                width: 180px;
+                height: 180px;
+            
             }
             &.sq-b1 {
-                bottom: 0;
+                bottom: 5px;
                 left: 30px;
-                z-index: -2;
+                z-index: 3;
             }
         }
     }
     .clipDiv {
         clip-path: polygon(0 7%, 100% 0, 100% 93%, 0% 100%);
-        padding: 50px;
-        background-color: $skyblue;
-        margin-top: -100px;
+        background-color: #5bcef2;
+        background-image: $urlFondo2;
+
+        margin-top: -130px;
         position: relative;
-        z-index: -10;
+        height: 700px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .proyectsGallery{
+            position: relative;
+            z-index: 2;
+            .proyectsUl{
+                display: flex;
+                overflow: auto;
+                padding: 10px;
+                li{
+                    width: 250px;
+                    padding: 20px;
+                    margin: 0 20px;
+                    background-color: #fff;
+                    border-radius: 25px;
+                    img{
+                        width: 200px;
+                        min-height: 120px;
+                        object-fit: cover;
+                    }
+                    h4{
+                        text-align: center;
+                        padding: 10px;
+                        border-bottom: 3px solid #555;
+                    }
+                    .techUsed{
+                        display: flex;
+                        flex-wrap: wrap;
+                        align-content: center;
+                        margin-top: 10px;
+                        p{
+                            margin: 0 5px;
+                            color: #555;
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+            .arrows{
+                display: flex;
+                justify-content: space-between;
+                padding: 0 50px;
+                position: absolute;
+                width: 100%;
+                bottom: -50px;
+                i{
+                    font-size: 24px;
+                    color: #fff;
+                }
+            }
+        }
     }
 }
