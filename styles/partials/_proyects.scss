@@ -51,10 +51,10 @@
         .proyectsGallery{
             position: relative;
             z-index: 2;
+            padding: 10px;
             .proyectsUl{
                 display: flex;
                 overflow: auto;
-                padding: 10px;
                 li{
                     min-width: 250px;
                     padding: 20px;

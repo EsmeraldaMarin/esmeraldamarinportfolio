@@ -1,5 +1,6 @@
-let body = document.querySelector('body')
-let burguerBtn = document.querySelector('.burguerMenu')
+let body = document.querySelector('body');
+let burguerBtn = document.querySelector('.burguerMenu');
+let header = document.querySelector('header')
 /* 
 window.onload = () => {
     let ctn = document.querySelector('.loader')
@@ -58,3 +59,12 @@ skillsSections.forEach(skill => {
         }
     })
 })
+window.addEventListener("scroll", scrollHeader)
+
+function scrollHeader() {
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        header.classList.add('onScroll')
+    } else {
+        header.classList.remove('onScroll')
+    }
+}
