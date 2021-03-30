@@ -117,6 +117,7 @@
         position: absolute;
         top: 125px;
         left: 20px;
+        z-index: 2;
         @media (min-width: $bp-1) {
             width: 150px;
             justify-content: space-evenly;

@@ -28,7 +28,6 @@
                 z-index: 4;
                 width: 180px;
                 height: 180px;
-            
             }
             &.sq-b1 {
                 bottom: 5px;
@@ -41,57 +40,120 @@
         clip-path: polygon(0 7%, 100% 0, 100% 93%, 0% 100%);
         background-color: #5bcef2;
         background-image: $urlFondo2;
-
+        overflow: hidden;
         margin-top: -130px;
         position: relative;
         height: 700px;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        .proyectsGallery{
+        .proyectsGallery {
             position: relative;
             z-index: 2;
             padding: 10px;
-            .proyectsUl{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            .proyectsUl {
                 display: flex;
                 overflow: auto;
-                li{
+                width: 95%;
+                &::-webkit-scrollbar {
+                    display: none;
+                }
+                li {
+                    position: relative;
                     min-width: 250px;
                     padding: 20px;
                     margin: 0 20px;
                     background-color: #fff;
                     border-radius: 25px;
-                    img{
+                    height: 350px;
+                    cursor: pointer;
+                    img {
                         width: 200px;
                         min-height: 120px;
                         object-fit: cover;
                     }
-                    h4{
+                    h4 {
                         text-align: center;
                         padding: 10px;
-                        border-bottom: 3px solid #555;
+                        border-bottom: 3px solid $skyblue;
                     }
-                    .techUsed{
+                    .techUsed {
                         display: flex;
                         flex-wrap: wrap;
                         align-content: center;
-                        margin-top: 10px;
-                        p{
+                        margin-top: 20px;
+                        p {
                             margin: 0 5px;
                             color: #555;
                             text-decoration: underline;
                         }
                     }
+                    &::after{
+                        content: "Click to see more";
+                        position: absolute;
+                        bottom: 20px;
+                        display: block;
+                        text-align: center;
+                        width: 100%;
+                        left: 0;
+                        font-size: 14px;
+                    }
+                    &.cardDescActive{
+                        .proyectDetails{
+                            display: flex;
+                        }
+                        &::after{
+                            display: none;
+                        }
+                    }
+                    .proyectDetails {
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        background-color: #ffffff;
+                        right: 0;
+                        top: 0;
+                        border-radius: 25px;
+                        display: none;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: space-between;
+                        padding: 30px 20px;
+                        p {
+                            font-size: 13px;
+                            margin-bottom: 5px;
+                            font-family: $sansserif;
+                        }
+                        h6 {
+                            width: 100%;
+                            font-size: 1em;
+                            text-align: center;
+                            padding-bottom: 5px;
+                            border-bottom: 2px solid $skyblue;
+                        }
+                        > div {
+                            width: 100%;
+                            display: flex;
+                            flex-direction: column;
+                            a {
+                                color: $skyblue;
+                                text-decoration: underline;
+                            }
+                        }
+                    }
                 }
             }
-            .arrows{
+            .arrows {
                 display: flex;
                 justify-content: space-between;
                 padding: 0 50px;
                 position: absolute;
                 width: 100%;
                 bottom: -50px;
-                i{
+                i {
                     font-size: 24px;
                     color: #fff;
                 }
