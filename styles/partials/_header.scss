@@ -72,6 +72,7 @@ header {
         right: 0;
         background-color: #fff;
         transition: width 0.5s ease;
+        box-shadow: 0 0 5px #999;
         @media (min-width: $bp-1) {
             height: 40px;
             position: inherit;
@@ -90,6 +91,7 @@ header {
                 height: 40px;
                 position: relative;
                 cursor: pointer;
+                margin-top: 10px;
                 @media (min-width: $bp-1) {
                     width: 90px;
                     margin: 0 10px;
@@ -101,11 +103,16 @@ header {
                     height: 100%;
                     line-height: 40px;
                     padding-left: 15px;
-
+                    display: flex;
+                    align-items: center;
                     @media (min-width: $bp-1) {
                         color: #fff;
                         line-height: 0;
                         padding: 0;
+                    }
+                    i{
+                        color: $skyblue;
+                        margin-right: 10px;
                     }
                 }
                 &:after {

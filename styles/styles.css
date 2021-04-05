@@ -227,6 +227,7 @@ header nav {
   right: 0;
   background-color: #fff;
   transition: width 0.5s ease;
+  box-shadow: 0 0 5px #999;
 }
 
 @media (min-width: 768px) {
@@ -255,6 +256,7 @@ header nav ul li {
   height: 40px;
   position: relative;
   cursor: pointer;
+  margin-top: 10px;
 }
 
 @media (min-width: 768px) {
@@ -271,6 +273,8 @@ header nav ul li a {
   height: 100%;
   line-height: 40px;
   padding-left: 15px;
+  display: flex;
+  align-items: center;
 }
 
 @media (min-width: 768px) {
@@ -279,6 +283,11 @@ header nav ul li a {
     line-height: 0;
     padding: 0;
   }
+}
+
+header nav ul li a i {
+  color: #5bcef2;
+  margin-right: 10px;
 }
 
 header nav ul li:after {
