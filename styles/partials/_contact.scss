@@ -1,0 +1,85 @@
+.contactSection {
+    .title {
+        margin: 0 auto;
+        width: 200px;
+        height: 150px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        h2 {
+            color: #fff;
+            font-weight: normal;
+            letter-spacing: 3px;
+            margin-top: 10px;
+            position: relative;
+            z-index: 2;
+        }
+        > div {
+            position: absolute;
+            &.sq-s1{
+                bottom: 0;
+                left: 0;
+                width: 130px;
+                height: 130px;
+            }
+            &.sq-o1{
+                right: 0;
+                top: 25px;
+                width: 100px;
+                height: 100px;
+            }
+            &.sq-o2{
+                top: 0;
+                left: 80px;
+            }
+        }
+    }
+    .form{
+        color: #fff;
+        padding: 80px 50px 50px;
+        display: flex;
+        flex-direction: column;
+        
+        h5{
+            margin-bottom: 20px;
+            font-family: $sansserif;
+            font-weight: normal;
+            font-size: 24px;
+            letter-spacing: 3px;
+        }
+        input{
+            height: 30px;
+            margin: 10px 0 20px;
+        }
+        label{
+            font-family: $sansserif;
+            letter-spacing: 3px;
+        }
+        textarea{
+            margin: 10px 0 20px;
+        }
+        .btnsSection{
+            align-self: flex-end;
+            button{
+                width: 100px;
+                height: 30px;
+                font-family: $sansserif;
+                background-color: transparent;
+                letter-spacing: 3px;
+                &:first-child{
+                    color: #fff;
+                }
+                &:last-child{
+                    background-color: #fff;
+                }
+            }
+        }
+    }
+    img{
+        display: block;
+        margin: 0 auto;
+        clip-path: circle(50% at 50% 50%);
+        object-fit: cover;
+    }
+}

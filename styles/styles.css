@@ -630,35 +630,35 @@ header nav ul li:active {
 }
 
 .range .rangeColor.r90 {
-  width: 95%;
+  width: 90%;
 }
 
 .range .rangeColor.r80 {
-  width: 85%;
+  width: 80%;
 }
 
 .range .rangeColor.r70 {
-  width: 75%;
+  width: 70%;
 }
 
 .range .rangeColor.r60 {
-  width: 65%;
+  width: 60%;
 }
 
 .range .rangeColor.r50 {
-  width: 55%;
+  width: 50%;
 }
 
 .range .rangeColor.r40 {
-  width: 45%;
+  width: 40%;
 }
 
 .range .rangeColor.r30 {
-  width: 35%;
+  width: 30%;
 }
 
 .range .rangeColor.r10 {
-  width: 15%;
+  width: 10%;
 }
 
 .proyectsSection .title {
@@ -843,5 +843,103 @@ header nav ul li:active {
 .proyectsSection .clipDiv .proyectsGallery .arrows i {
   font-size: 24px;
   color: #fff;
+}
+
+.contactSection .title {
+  margin: 0 auto;
+  width: 200px;
+  height: 150px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactSection .title h2 {
+  color: #fff;
+  font-weight: normal;
+  letter-spacing: 3px;
+  margin-top: 10px;
+  position: relative;
+  z-index: 2;
+}
+
+.contactSection .title > div {
+  position: absolute;
+}
+
+.contactSection .title > div.sq-s1 {
+  bottom: 0;
+  left: 0;
+  width: 130px;
+  height: 130px;
+}
+
+.contactSection .title > div.sq-o1 {
+  right: 0;
+  top: 25px;
+  width: 100px;
+  height: 100px;
+}
+
+.contactSection .title > div.sq-o2 {
+  top: 0;
+  left: 80px;
+}
+
+.contactSection .form {
+  color: #fff;
+  padding: 80px 50px 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contactSection .form h5 {
+  margin-bottom: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: normal;
+  font-size: 24px;
+  letter-spacing: 3px;
+}
+
+.contactSection .form input {
+  height: 30px;
+  margin: 10px 0 20px;
+}
+
+.contactSection .form label {
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 3px;
+}
+
+.contactSection .form textarea {
+  margin: 10px 0 20px;
+}
+
+.contactSection .form .btnsSection {
+  align-self: flex-end;
+}
+
+.contactSection .form .btnsSection button {
+  width: 100px;
+  height: 30px;
+  font-family: "Poppins", sans-serif;
+  background-color: transparent;
+  letter-spacing: 3px;
+}
+
+.contactSection .form .btnsSection button:first-child {
+  color: #fff;
+}
+
+.contactSection .form .btnsSection button:last-child {
+  background-color: #fff;
+}
+
+.contactSection img {
+  display: block;
+  margin: 0 auto;
+  clip-path: circle(50% at 50% 50%);
+  object-fit: cover;
 }
 /*# sourceMappingURL=styles.css.map */
