@@ -551,7 +551,6 @@ header nav ul li:active {
 }
 
 .skillsSection .skillsTable .skillsSections li:first-child {
-  border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
 }
 
@@ -845,6 +844,10 @@ header nav ul li:active {
   color: #fff;
 }
 
+.contactSection {
+  padding-top: 100px;
+}
+
 .contactSection .title {
   margin: 0 auto;
   width: 200px;
@@ -906,6 +909,7 @@ header nav ul li:active {
   height: 30px;
   margin: 10px 0 20px;
   padding: 0 10px;
+  font-size: 14px;
 }
 
 .contactSection .form label {
@@ -916,6 +920,7 @@ header nav ul li:active {
 .contactSection .form textarea {
   margin: 10px 0 20px;
   padding: 10px;
+  font-size: 14px;
 }
 
 .contactSection .form .btnsSection {
