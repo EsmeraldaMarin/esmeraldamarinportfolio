@@ -905,6 +905,7 @@ header nav ul li:active {
 .contactSection .form input {
   height: 30px;
   margin: 10px 0 20px;
+  padding: 0 10px;
 }
 
 .contactSection .form label {
@@ -914,6 +915,7 @@ header nav ul li:active {
 
 .contactSection .form textarea {
   margin: 10px 0 20px;
+  padding: 10px;
 }
 
 .contactSection .form .btnsSection {
@@ -941,5 +943,50 @@ header nav ul li:active {
   margin: 0 auto;
   clip-path: circle(50% at 50% 50%);
   object-fit: cover;
+}
+
+footer {
+  height: 400px;
+  padding: 50px 0;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  text-align: center;
+  background-color: #ff8062;
+}
+
+footer hr {
+  width: 80px;
+  height: 2px;
+  background-color: #fff;
+}
+
+footer h6 {
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  font-weight: normal;
+}
+
+footer div p:first-child {
+  margin-bottom: 20px;
+}
+
+footer .socialMedia {
+  display: flex;
+  width: 200px;
+  justify-content: space-evenly;
+}
+
+footer .socialMedia a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: underline;
 }
 /*# sourceMappingURL=styles.css.map */

@@ -51,6 +51,7 @@
         input{
             height: 30px;
             margin: 10px 0 20px;
+            padding: 0 10px;
         }
         label{
             font-family: $sansserif;
@@ -58,6 +59,7 @@
         }
         textarea{
             margin: 10px 0 20px;
+            padding: 10px;
         }
         .btnsSection{
             align-self: flex-end;
