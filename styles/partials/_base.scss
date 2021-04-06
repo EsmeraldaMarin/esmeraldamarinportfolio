@@ -77,3 +77,12 @@ html {
     height: 100px;
     background-color: #fff;
 }
+
+.empty{
+    background-color: $orange1;
+}
+.alert{
+    text-align: center;
+    margin: -10px 0 20px;
+    color: $orange1;
+}

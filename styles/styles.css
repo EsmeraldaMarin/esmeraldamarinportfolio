@@ -51,6 +51,15 @@
   }
 }
 
+@keyframes shine {
+  from {
+    background-color: #fff;
+  }
+  to {
+    background-color: #ff8062;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -137,6 +146,16 @@ html {
   width: 100px;
   height: 100px;
   background-color: #fff;
+}
+
+.empty {
+  background-color: #ff8062;
+}
+
+.alert {
+  text-align: center;
+  margin: -10px 0 20px;
+  color: #ff8062;
 }
 
 header {
@@ -936,7 +955,7 @@ header nav ul li:active {
   align-self: flex-end;
 }
 
-.contactSection .form .btnsSection button {
+.contactSection .form .btnsSection .button {
   width: 100px;
   height: 30px;
   font-family: "Poppins", sans-serif;
@@ -944,12 +963,28 @@ header nav ul li:active {
   letter-spacing: 3px;
 }
 
-.contactSection .form .btnsSection button:first-child {
+.contactSection .form .btnsSection .button:first-child {
   color: #fff;
 }
 
-.contactSection .form .btnsSection button:last-child {
+.contactSection .form .btnsSection .button:last-child, .contactSection .form .btnsSection .button:nth-child(2) {
   background-color: #fff;
+}
+
+.contactSection .form .btnsSection a {
+  display: none;
+}
+
+.contactSection .form .btnsSection.confirmed .button:nth-child(2) {
+  display: none;
+}
+
+.contactSection .form .btnsSection.confirmed a {
+  display: inline-block;
+  text-align: center;
+  line-height: 30px;
+  color: #040330;
+  animation: shine 0.5s infinite;
 }
 
 .contactSection img {

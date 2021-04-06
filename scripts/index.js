@@ -8,7 +8,11 @@ let btnLeft = document.getElementById("btnLeft");
 let btnRight = document.getElementById("btnRight");
 let index = 0;
 let cardsProyect = document.querySelectorAll(".proyectsUl>li");
-
+let cancelBtn = document.getElementById('cancelBtn');
+let confirmBtn = document.getElementById('confirmBtn');
+let fullname = document.getElementById('fullname');
+let email = document.getElementById('email');
+let message = document.getElementById('message');
 
 cardsProyect.forEach(card => {
     let id = card.id;
@@ -176,3 +180,42 @@ btnRight.addEventListener("click", () => show(+1));
 window.addEventListener("scroll", scrollHeader)
 
 
+//form
+
+confirmBtn.addEventListener('click', () => {
+    if (fullname.value == "" || email.value == "" || message.value == "") {
+        let span = document.querySelector('.alert')
+        if(span){span.remove()}
+        cancelBtn.parentNode.insertAdjacentHTML('beforebegin', '<span class="alert">Rellene todos los campos</span>')
+        span = document.querySelector('.alert')
+        if (fullname.value == "") {
+            fullname.classList.add('empty');
+            fullname.addEventListener('keyup', () => {
+                fullname.classList.remove('empty');
+                span.remove();
+            })
+        } else if (email.value == "") {
+            email.classList.add('empty');
+            email.addEventListener('keyup', () => {
+                email.classList.remove('empty')
+                span.remove();
+            })
+        } else if (message.value == "") {
+            message.classList.add('empty');
+            message.addEventListener('keyup', () => {
+                message.classList.remove('empty')
+                span.remove();
+            })
+        }
+    } else {
+        let msg = `Hello Esmeralda, I am ${fullname.value} and I want to send you a message from my email (${email.value}): ${message.value}`
+        let anchorSend = document.getElementById('mailTo');
+        anchorSend.href = `mailto:esmemarinm03@gmail.com?subject=query%20from%20portfolio&body=${msg}`
+        confirmBtn.parentNode.classList.add('confirmed');
+    }
+
+})
+
+cancelBtn.addEventListener('click', ()=>{
+    
+})

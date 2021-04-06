@@ -107,6 +107,14 @@ $bp-2: 1024px;
         opacity: 1;
     }
 }
+@keyframes shine {
+    from {
+        background-color: #fff;
+    }
+    to {
+        background-color: $orange1;
+    }
+}
 
 //urls backgrounds
 

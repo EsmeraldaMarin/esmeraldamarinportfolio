@@ -18,70 +18,86 @@
         }
         > div {
             position: absolute;
-            &.sq-s1{
+            &.sq-s1 {
                 bottom: 0;
                 left: 0;
                 width: 130px;
                 height: 130px;
             }
-            &.sq-o1{
+            &.sq-o1 {
                 right: 0;
                 top: 25px;
                 width: 100px;
                 height: 100px;
             }
-            &.sq-o2{
+            &.sq-o2 {
                 top: 0;
                 left: 80px;
             }
         }
     }
-    .form{
+    .form {
         color: #fff;
         padding: 80px 50px 50px;
         display: flex;
         flex-direction: column;
-        
-        h5{
+
+        h5 {
             margin-bottom: 20px;
             font-family: $sansserif;
             font-weight: normal;
             font-size: 24px;
             letter-spacing: 3px;
         }
-        input{
+        input {
             height: 30px;
             margin: 10px 0 20px;
             padding: 0 10px;
             font-size: 14px;
         }
-        label{
+        label {
             font-family: $sansserif;
             letter-spacing: 3px;
         }
-        textarea{
+        textarea {
             margin: 10px 0 20px;
             padding: 10px;
             font-size: 14px;
         }
-        .btnsSection{
+        .btnsSection {
             align-self: flex-end;
-            button{
+            .button {
                 width: 100px;
                 height: 30px;
                 font-family: $sansserif;
                 background-color: transparent;
                 letter-spacing: 3px;
-                &:first-child{
+                &:first-child {
                     color: #fff;
                 }
-                &:last-child{
+                &:last-child,
+                &:nth-child(2) {
                     background-color: #fff;
+                }
+            }
+            a {
+                display: none;
+            }
+            &.confirmed {
+                .button:nth-child(2) {
+                    display: none;
+                }
+                a {
+                    display: inline-block;
+                    text-align: center;
+                    line-height: 30px;
+                    color: $blue;
+                    animation: shine 0.5s infinite;
                 }
             }
         }
     }
-    img{
+    img {
         display: block;
         margin: 0 auto;
         clip-path: circle(50% at 50% 50%);

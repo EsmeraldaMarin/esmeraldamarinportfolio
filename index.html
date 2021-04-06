@@ -307,14 +307,15 @@
                 <div class="form">
                     <h5>SEND ME AN EMAIL</h5>
                     <label for="fullname">FULL NAME</label>
-                    <input type="text" name="Nombre" id="fullname" required>
+                    <input type="text" id="fullname">
                     <label for="email">EMAIL</label>
-                    <input type="email" name="Email" id="email" required>
+                    <input type="email" id="email">
                     <label for="message">MESSAGE</label>
-                    <textarea name="Mensaje" id="message" cols="30" rows="10" required></textarea>
+                    <textarea id="message" cols="30" rows="10"></textarea>
                     <div class="btnsSection">
-                        <button class="button" type="button">CANCEL</button>
-                        <a href="mailto:esmemarinm03@gmail.com?subject=Consulta de Portfolio" class="button">SEND</a>
+                        <button class="button" type="button" id="cancelBtn">CANCEL</button>
+                        <button class="button" type="button" id="confirmBtn">CONFIRM</button>
+                        <a class="button" id="mailTo">SEND</a>
                     </div>
                 </div>
                 <img src="https://i.ibb.co/3htnRvK/foto2esme.jpg" alt="foto - esmeralda marin">
