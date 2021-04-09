@@ -14,6 +14,7 @@ body {
     background-color: $blue;
     background-image: $urlFondo;
     animation: 10s linear 0s normal none infinite animate;
+    background-attachment: fixed;
 }
 li {
     list-style: none;

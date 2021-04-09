@@ -44,8 +44,10 @@
             }
             &.sq-o2 {
                 bottom: 0;
-                left: 140px;
                 z-index: -2;
+                @media (min-width: $bp-1) {
+                    left: 140px;
+                }
             }
         }
     }
