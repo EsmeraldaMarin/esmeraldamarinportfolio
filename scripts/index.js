@@ -95,7 +95,7 @@ window.addEventListener('scroll', Appear); */
 
 scrollDownBtn.addEventListener('click', () => {
     window.scroll({
-        top: 500,
+        top: 700,
         left: 0,
         behavior: 'smooth'
     });
@@ -217,5 +217,5 @@ confirmBtn.addEventListener('click', () => {
 })
 
 cancelBtn.addEventListener('click', ()=>{
-    
+
 })

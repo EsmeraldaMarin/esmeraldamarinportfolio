@@ -8,7 +8,10 @@ header {
     z-index: 1000;
     height: 50px;
     transition: background-color 0.5s ease;
-
+    @media (min-width: 768px) {
+        height: 60px;
+        padding: 0 60px;
+    }
     &.onScroll {
         background-color: $blue;
         transition: background-color 0.5s ease;
@@ -28,7 +31,7 @@ header {
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-        @media (min-width: $bp-1) {
+        @media (min-width: 768px) {
             display: none;
         }
         span {
@@ -74,17 +77,20 @@ header {
         transition: width 0.5s ease;
         box-shadow: 0 0 5px #999;
         @media (min-width: $bp-1) {
-            height: 40px;
+            height: 60px;
             position: inherit;
             background-color: transparent;
             overflow: initial;
             width: auto;
+            box-shadow: none;
         }
         ul {
             display: flex;
             flex-direction: column;
             @media (min-width: $bp-1) {
                 flex-direction: row;
+                height: 60px;
+                align-items: center;
             }
             li {
                 width: 100%;
@@ -95,7 +101,8 @@ header {
                 @media (min-width: $bp-1) {
                     width: 90px;
                     margin: 0 10px;
-                    line-height: 35px;
+                    line-height: 60px;
+                    height: 50px;
                 }
                 a {
                     color: $blue;
@@ -110,9 +117,12 @@ header {
                         line-height: 0;
                         padding: 0;
                     }
-                    i{
+                    i {
                         color: $skyblue;
                         margin-right: 10px;
+                        @media (min-width: 768px) {
+                            display: none !important;
+                        }
                     }
                 }
                 &:after {
@@ -133,6 +143,9 @@ header {
                 }
                 &:active {
                     background-color: $orange2;
+                    @media (min-width: 768px) {
+                        background-color: $orange1;
+                    }
                 }
             }
         }

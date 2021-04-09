@@ -4,6 +4,7 @@
     font-family: $monospace;
     color: #fff;
     @media (min-width: $bp-1) {
+        height: calc(100vh - 60px);
     }
 
     > img {
@@ -22,15 +23,12 @@
         z-index: 2;
         justify-content: center;
         overflow: hidden;
-
-        // top: 30px;
         @media (min-width: $bp-1) {
-            height: auto;
-            display: grid;
-            grid-template-columns: 600px 1fr;
-            top: 15%;
-            justify-items: center;
-            align-items: center;
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            justify-content: inherit;
+            overflow: inherit;
         }
         img {
             width: 85%;
@@ -41,9 +39,13 @@
             position: absolute;
             right: -60px;
             top: 25px;
+            z-index: -1;
             @media (min-width: $bp-1) {
                 width: 500px;
                 margin-bottom: 10px;
+                position: inherit;
+                left: 150px;
+                top: inherit;
             }
         }
         .textArea {
@@ -54,7 +56,10 @@
             padding: 10px 20px;
 
             @media (min-width: $bp-1) {
-                padding: 0;
+                padding: 10px 20px 20px;
+                position: relative;
+                height: fit-content;
+                margin: 120px 0 0 100px;
             }
             .myName {
                 margin: 10px 0;
@@ -94,15 +99,16 @@
             }
             .aboutMe {
                 display: none;
-                width: 800px;
-                margin-top: 50px;
+                width: 600px;
                 font-family: $sansserif;
-                white-space: inherit;
-                overflow: initial;
-                opacity: 0;
-                color: $orange1;
-                text-shadow: 0 0 5px #fff;
-                animation: appear 0.5s 6s forwards;
+                @media (min-width: 768px) {
+                    display: block;
+                    position: absolute;
+                    border-left: 3px solid $skyblue;
+                    padding: 10px 20px;
+                    bottom: -80%;
+                    left: 200px;
+                }
             }
         }
     }
@@ -119,14 +125,19 @@
         left: 20px;
         z-index: 2;
         @media (min-width: $bp-1) {
-            width: 150px;
+            height: 150px;
             justify-content: space-evenly;
+            top: calc(50% - 75px);
+            left: 60px;
         }
         i {
             color: #fff;
             font-size: 16px;
             &:hover {
                 color: $skyblue;
+            }
+            @media (min-width: $bp-1) {
+                font-size: 20px;
             }
         }
     }
@@ -138,12 +149,20 @@
         animation: updown 2s alternate-reverse ease-in-out infinite;
         z-index: 2;
         cursor: pointer;
+        @media (min-width: $bp-1) {
+            left: inherit;
+            right: 80px;
+            bottom: 100px;
+        }
         span {
             font-family: $sansserif;
             -webkit-user-select: none;
             -moz-user-select: none;
             -ms-user-select: none;
             user-select: none;
+            @media (min-width: $bp-1) {
+                font-size: 20px;
+            }
         }
     }
 }

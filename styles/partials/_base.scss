@@ -56,16 +56,28 @@ html {
     width: 120px;
     height: 120px;
     background-color: $orange1;
+    @media (min-width: $bp-1) {
+        width: 200px;
+        height: 200px;
+    }
 }
 .sq-s1 {
     width: 100px;
     height: 100px;
     background-color: $skyblue;
+    @media (min-width: $bp-1) {
+        width: 150px;
+        height: 150px;
+    }
 }
 .sq-o2 {
     width: 50px;
     height: 50px;
     background-color: $orange2;
+    @media (min-width: $bp-1) {
+        width: 100px;
+        height: 100px;
+    }
 }
 .sq-b1 {
     width: 70px;
@@ -78,10 +90,10 @@ html {
     background-color: #fff;
 }
 
-.empty{
+.empty {
     background-color: $orange1;
 }
-.alert{
+.alert {
     text-align: center;
     margin: -10px 0 20px;
     color: $orange1;
