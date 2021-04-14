@@ -1,4 +1,4 @@
-footer{
+footer {
     height: 400px;
     padding: 50px 0;
     margin-top: 50px;
@@ -9,31 +9,63 @@ footer{
     color: #fff;
     text-align: center;
     background-color: $orange1;
-    hr{
+
+    @media (min-width: $bp-1) {
+        height: 150px;
+        padding: 0;
+        flex-direction: row;
+        justify-content: space-evenly;
+        text-align: left;
+        font-size: 18px;
+    }
+    hr {
         width: 80px;
         height: 2px;
         background-color: #fff;
+        @media (min-width: $bp-1) {
+            display: none;
+        }
     }
-    h6{
+    h6 {
         font-family: $sansserif;
         font-size: 40px;
         font-weight: normal;
-    }
-    div{
-        p:first-child{
-            margin-bottom: 20px;
+        @media (min-width: $bp-1) {
+            font-size: 50px;
         }
     }
-    .socialMedia{
+    > div {
+        @media (min-width: $bp-1) {
+            padding: 10px 20px;
+            border-left: 3px solid #fff;
+            &:first-child {
+                border-left: 0;
+                padding: 0;
+            }
+        }
+        p:first-child {
+            margin-bottom: 20px;
+            @media (min-width: $bp-1) {
+                margin-bottom: 10px;
+            }
+        }
+    }
+    .socialMedia {
         display: flex;
         width: 200px;
         justify-content: space-evenly;
-        a{
-            color: #fff;    
+        @media (min-width: $bp-1) {
+            justify-content: flex-start;
+            a {
+                margin-right: 30px;
+            }
+        }
+        a {
+            color: #fff;
             text-decoration: none;
         }
     }
-    a{
+    a {
         color: #fff;
         text-decoration: underline;
     }

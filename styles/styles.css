@@ -518,7 +518,7 @@ header nav ul li:active {
     border-left: 3px solid #5bcef2;
     padding: 10px 20px;
     bottom: -80%;
-    left: 200px;
+    left: 150px;
   }
 }
 
@@ -596,7 +596,7 @@ header nav ul li:active {
 @media (min-width: 768px) {
   .skillsSection {
     width: 100%;
-    padding: 40px 230px;
+    padding: 40px 180px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1080,6 +1080,13 @@ header nav ul li:active {
   align-items: center;
 }
 
+@media (min-width: 768px) {
+  .contactSection .title {
+    width: 300px;
+    height: 250px;
+  }
+}
+
 .contactSection .title h2 {
   color: #fff;
   font-weight: normal;
@@ -1087,6 +1094,13 @@ header nav ul li:active {
   margin-top: 10px;
   position: relative;
   z-index: 2;
+}
+
+@media (min-width: 768px) {
+  .contactSection .title h2 {
+    margin-top: 50px;
+    font-size: 36px;
+  }
 }
 
 .contactSection .title > div {
@@ -1100,6 +1114,13 @@ header nav ul li:active {
   height: 130px;
 }
 
+@media (min-width: 768px) {
+  .contactSection .title > div.sq-s1 {
+    width: 200px;
+    height: 200px;
+  }
+}
+
 .contactSection .title > div.sq-o1 {
   right: 0;
   top: 25px;
@@ -1107,19 +1128,53 @@ header nav ul li:active {
   height: 100px;
 }
 
+@media (min-width: 768px) {
+  .contactSection .title > div.sq-o1 {
+    width: 150px;
+    height: 150px;
+    top: inherit;
+    bottom: 20px;
+  }
+}
+
 .contactSection .title > div.sq-o2 {
   top: 0;
   left: 80px;
 }
 
-.contactSection .form {
+@media (min-width: 768px) {
+  .contactSection .title > div.sq-o2 {
+    width: 100px;
+    height: 100px;
+    left: 130px;
+  }
+}
+
+@media (min-width: 768px) {
+  .contactSection .flex-form {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 0;
+  }
+}
+
+.contactSection .flex-form .form {
   color: #fff;
   padding: 80px 50px 50px;
   display: flex;
   flex-direction: column;
 }
 
-.contactSection .form h5 {
+@media (min-width: 768px) {
+  .contactSection .flex-form .form {
+    padding: 0;
+    width: 400px;
+  }
+}
+
+.contactSection .flex-form .form h5 {
   margin-bottom: 20px;
   font-family: "Poppins", sans-serif;
   font-weight: normal;
@@ -1127,29 +1182,29 @@ header nav ul li:active {
   letter-spacing: 3px;
 }
 
-.contactSection .form input {
+.contactSection .flex-form .form input {
   height: 30px;
   margin: 10px 0 20px;
   padding: 0 10px;
   font-size: 14px;
 }
 
-.contactSection .form label {
+.contactSection .flex-form .form label {
   font-family: "Poppins", sans-serif;
   letter-spacing: 3px;
 }
 
-.contactSection .form textarea {
+.contactSection .flex-form .form textarea {
   margin: 10px 0 20px;
   padding: 10px;
   font-size: 14px;
 }
 
-.contactSection .form .btnsSection {
+.contactSection .flex-form .form .btnsSection {
   align-self: flex-end;
 }
 
-.contactSection .form .btnsSection .button {
+.contactSection .flex-form .form .btnsSection .button {
   width: 100px;
   height: 30px;
   font-family: "Poppins", sans-serif;
@@ -1157,23 +1212,23 @@ header nav ul li:active {
   letter-spacing: 3px;
 }
 
-.contactSection .form .btnsSection .button:first-child {
+.contactSection .flex-form .form .btnsSection .button:first-child {
   color: #fff;
 }
 
-.contactSection .form .btnsSection .button:last-child, .contactSection .form .btnsSection .button:nth-child(2) {
+.contactSection .flex-form .form .btnsSection .button:last-child, .contactSection .flex-form .form .btnsSection .button:nth-child(2) {
   background-color: #fff;
 }
 
-.contactSection .form .btnsSection a {
+.contactSection .flex-form .form .btnsSection a {
   display: none;
 }
 
-.contactSection .form .btnsSection.confirmed .button:nth-child(2) {
+.contactSection .flex-form .form .btnsSection.confirmed .button:nth-child(2) {
   display: none;
 }
 
-.contactSection .form .btnsSection.confirmed a {
+.contactSection .flex-form .form .btnsSection.confirmed a {
   display: inline-block;
   text-align: center;
   line-height: 30px;
@@ -1181,11 +1236,19 @@ header nav ul li:active {
   animation: shine 0.5s infinite;
 }
 
-.contactSection img {
+.contactSection .flex-form img {
   display: block;
   margin: 0 auto;
   clip-path: circle(50% at 50% 50%);
   object-fit: cover;
+}
+
+@media (min-width: 768px) {
+  .contactSection .flex-form img {
+    width: 380px;
+    height: 380px;
+    margin: 0 150px 0 0;
+  }
 }
 
 footer {
@@ -1201,10 +1264,27 @@ footer {
   background-color: #ff8062;
 }
 
+@media (min-width: 768px) {
+  footer {
+    height: 150px;
+    padding: 0;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: left;
+    font-size: 18px;
+  }
+}
+
 footer hr {
   width: 80px;
   height: 2px;
   background-color: #fff;
+}
+
+@media (min-width: 768px) {
+  footer hr {
+    display: none;
+  }
 }
 
 footer h6 {
@@ -1213,14 +1293,46 @@ footer h6 {
   font-weight: normal;
 }
 
-footer div p:first-child {
+@media (min-width: 768px) {
+  footer h6 {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 768px) {
+  footer > div {
+    padding: 10px 20px;
+    border-left: 3px solid #fff;
+  }
+  footer > div:first-child {
+    border-left: 0;
+    padding: 0;
+  }
+}
+
+footer > div p:first-child {
   margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  footer > div p:first-child {
+    margin-bottom: 10px;
+  }
 }
 
 footer .socialMedia {
   display: flex;
   width: 200px;
   justify-content: space-evenly;
+}
+
+@media (min-width: 768px) {
+  footer .socialMedia {
+    justify-content: flex-start;
+  }
+  footer .socialMedia a {
+    margin-right: 30px;
+  }
 }
 
 footer .socialMedia a {

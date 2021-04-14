@@ -8,6 +8,10 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        @media (min-width: $bp-1) {
+            width: 300px;
+            height: 250px;
+        }
         h2 {
             color: #fff;
             font-weight: normal;
@@ -15,6 +19,10 @@
             margin-top: 10px;
             position: relative;
             z-index: 2;
+            @media (min-width: $bp-1) {
+                margin-top: 50px;
+                font-size: 36px;
+            }
         }
         > div {
             position: absolute;
@@ -23,84 +31,117 @@
                 left: 0;
                 width: 130px;
                 height: 130px;
+                @media (min-width: $bp-1) {
+                    width: 200px;
+                    height: 200px;
+                }
             }
             &.sq-o1 {
                 right: 0;
                 top: 25px;
                 width: 100px;
                 height: 100px;
+                @media (min-width: $bp-1) {
+                    width: 150px;
+                    height: 150px;
+                    top: inherit;
+                    bottom: 20px;
+                }
             }
             &.sq-o2 {
                 top: 0;
                 left: 80px;
+                @media (min-width: $bp-1) {
+                    width: 100px;
+                    height: 100px;
+                    left: 130px;
+                }
             }
         }
     }
-    .form {
-        color: #fff;
-        padding: 80px 50px 50px;
-        display: flex;
-        flex-direction: column;
+    .flex-form {
+        @media (min-width: $bp-1) {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: center;
+            align-items: center;
+            margin: 100px 0;
+        }
+        .form {
+            color: #fff;
+            padding: 80px 50px 50px;
+            display: flex;
+            flex-direction: column;
+            @media (min-width: $bp-1) {
+                padding: 0;
+                width: 400px;
+            }
 
-        h5 {
-            margin-bottom: 20px;
-            font-family: $sansserif;
-            font-weight: normal;
-            font-size: 24px;
-            letter-spacing: 3px;
-        }
-        input {
-            height: 30px;
-            margin: 10px 0 20px;
-            padding: 0 10px;
-            font-size: 14px;
-        }
-        label {
-            font-family: $sansserif;
-            letter-spacing: 3px;
-        }
-        textarea {
-            margin: 10px 0 20px;
-            padding: 10px;
-            font-size: 14px;
-        }
-        .btnsSection {
-            align-self: flex-end;
-            .button {
-                width: 100px;
-                height: 30px;
+            h5 {
+                margin-bottom: 20px;
                 font-family: $sansserif;
-                background-color: transparent;
+                font-weight: normal;
+                font-size: 24px;
                 letter-spacing: 3px;
-                &:first-child {
-                    color: #fff;
-                }
-                &:last-child,
-                &:nth-child(2) {
-                    background-color: #fff;
-                }
             }
-            a {
-                display: none;
+            input {
+                height: 30px;
+                margin: 10px 0 20px;
+                padding: 0 10px;
+                font-size: 14px;
             }
-            &.confirmed {
-                .button:nth-child(2) {
-                    display: none;
+            label {
+                font-family: $sansserif;
+                letter-spacing: 3px;
+            }
+            textarea {
+                margin: 10px 0 20px;
+                padding: 10px;
+                font-size: 14px;
+            }
+            .btnsSection {
+                align-self: flex-end;
+                .button {
+                    width: 100px;
+                    height: 30px;
+                    font-family: $sansserif;
+                    background-color: transparent;
+                    letter-spacing: 3px;
+                    &:first-child {
+                        color: #fff;
+                    }
+                    &:last-child,
+                    &:nth-child(2) {
+                        background-color: #fff;
+                    }
                 }
                 a {
-                    display: inline-block;
-                    text-align: center;
-                    line-height: 30px;
-                    color: $blue;
-                    animation: shine 0.5s infinite;
+                    display: none;
+                }
+                &.confirmed {
+                    .button:nth-child(2) {
+                        display: none;
+                    }
+                    a {
+                        display: inline-block;
+                        text-align: center;
+                        line-height: 30px;
+                        color: $blue;
+                        animation: shine 0.5s infinite;
+                    }
                 }
             }
         }
-    }
-    img {
-        display: block;
-        margin: 0 auto;
-        clip-path: circle(50% at 50% 50%);
-        object-fit: cover;
+        img {
+            display: block;
+            margin: 0 auto;
+            clip-path: circle(50% at 50% 50%);
+            object-fit: cover;
+            @media (min-width: $bp-1) {
+                width: 380px;
+                height: 380px;
+                margin: 0 150px 0 0;
+            }
+        }
     }
 }
