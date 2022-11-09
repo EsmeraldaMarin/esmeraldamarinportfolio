@@ -23,10 +23,10 @@ cardsProyect.forEach(card => {
 
     switch (id) {
         case 'proy1':
-            title = 'Podcast Channel';
-            description = 'A simple Landing page of a podcast channel, includes all styles with flexbox implementation, 100% responsive and friendly to all devices.'
+            title = 'Fast Food e-commerce';
+            description = 'Fast food is an e-commerce project that offers the user the possibility of buying food according to their needs. 100% responsive and friendly to all devices.'
             demolink = 'https://esmeraldamarin.github.io/PodcastEsmeralda/';
-            githubLink = 'https://github.com/EsmeraldaMarin/PodcastEsmeralda';
+            githubLink = 'https://github.com/EsmeraldaMarin/fastfood-marin';
             break;
         case 'proy2':
             title = 'Gifos';
@@ -41,10 +41,10 @@ cardsProyect.forEach(card => {
             githubLink = 'https://github.com/EsmeraldaMarin/datawarehouse';
             break;
         case 'proy4':
-            title = 'Vacunate CBA';
-            description = 'Website where updated information on vaccination against COVID-19 in Argentina is published.'
-            demolink = 'https://vacunatecba.000webhostapp.com/';
-            githubLink = 'https://github.com/EsmeraldaMarin/vacunacioninfo';
+            title = 'Podcast Channel';
+            description = 'A simple Landing page of a podcast channel, includes all styles with flexbox implementation, 100% responsive and friendly to all devices.'
+            demolink = 'https://esmeraldamarin.github.io/PodcastEsmeralda/';
+            githubLink = 'https://github.com/EsmeraldaMarin/PodcastEsmeralda';
             break;
         case 'proy5':
             title = 'Delilah Resto';
