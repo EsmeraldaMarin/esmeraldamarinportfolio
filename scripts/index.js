@@ -25,7 +25,7 @@ cardsProyect.forEach(card => {
         case 'proy1':
             title = 'Fast Food e-commerce';
             description = 'Fast food is an e-commerce project that offers the user the possibility of buying food according to their needs. 100% responsive and friendly to all devices.'
-            demolink = 'https://esmeraldamarin.github.io/PodcastEsmeralda/';
+            demolink = 'https://drive.google.com/file/d/1XZ2MEcWc3oiuLABjXAijUeTKEPs8rshw/view?usp=sharing';
             githubLink = 'https://github.com/EsmeraldaMarin/fastfood-marin';
             break;
         case 'proy2':
@@ -37,7 +37,7 @@ cardsProyect.forEach(card => {
         case 'proy3':
             title = 'Data WareHouse';
             description = 'Data WareHouse is a website that as a marketing company will allow you to manage the contact of your clients, companies and regions / countries / cities with which you work.';
-            demolink = 'demoproy3';
+            demolink = 'https://drive.google.com/file/d/1nTjlPxG5qSZFQ55ApHmlx3UcltbUq8U1/view?usp=sharing';
             githubLink = 'https://github.com/EsmeraldaMarin/datawarehouse';
             break;
         case 'proy4':
